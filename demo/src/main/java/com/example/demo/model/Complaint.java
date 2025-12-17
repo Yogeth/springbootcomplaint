@@ -7,9 +7,9 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Complaint{
- private name;
+ private String name;
  @Id
- private email;
- private issues;
- private message;
+ private String email;
+ private  String issues;
+ private  String message;
 }
