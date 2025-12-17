@@ -12,11 +12,12 @@ public class ComplaintController{
   ComplaintService comp;
   
   @PostMapping("postComplaint")
-  public void postComplaint(@RequestParam("name") String name,
+  public String postComplaint(@RequestParam("name") String name,
                             @RequestParam("email") String email,     
                             @RequestParam("issues") String issues,
                             @RequestParam("message") String message){
     
     comp.postComplaint(name,email,issues,message);
+    return "REGISTERED SUCESSFULLY";
   }
 }
