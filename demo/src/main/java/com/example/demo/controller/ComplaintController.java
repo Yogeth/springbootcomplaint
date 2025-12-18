@@ -22,7 +22,7 @@ public class ComplaintController{
   }
   
   @GetMapping("viewComplaints")
-  public list<Complaint> getRegData(){
+  public List<Complaint> getRegData(){
     return comp.getRegData();
   }
 }

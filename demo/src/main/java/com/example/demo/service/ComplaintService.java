@@ -14,7 +14,7 @@ public class ComplaintService{
     repo.save(comp);
   }
   
-  public list<Complaint> getRegData(){
+  public List<Complaint> getRegData(){
      return repo.findAll();
   }
 }
