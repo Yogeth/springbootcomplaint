@@ -20,4 +20,9 @@ public class ComplaintController{
     comp.postComplaint(name,email,issues,message);
     return "REGISTERED SUCESSFULLY";
   }
+  
+  @GetMapping("viewComplaints")
+  public list<Complaint> getRegData(){
+    return comp.getRegData();
+  }
 }

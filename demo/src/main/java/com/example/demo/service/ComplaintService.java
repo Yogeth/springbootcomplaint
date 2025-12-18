@@ -13,4 +13,8 @@ public class ComplaintService{
     Complaint comp=new Complaint(name,email,issues,message);
     repo.save(comp);
   }
+  
+  public list<Complaint> getRegData(){
+     return repo.findAll();
+  }
 }
